@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>
+            <input type="range" name="valor" id="ivalor" max="10" min="0">
+            <output id="saida">5</output>
+        </p>
+    </form>
+    <script>
+        let valor = document.getElementById('ivalor')
+        let saida = document.getElementById('saida')
+
+        valor.addEventListener('input', () => {
+            saida.textContent = Number(valor.value)
+        })
+    </script>
+</body>
+</html>
